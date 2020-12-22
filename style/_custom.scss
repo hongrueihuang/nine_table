@@ -1,0 +1,83 @@
+body, html {
+    line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6, ul {
+    margin-bottom: 0;
+}
+
+h1 {
+    font-size: 56px;
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: -118px;
+        height: 1px;
+        background-color: $primary;
+        width: 100%;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: -152px;
+        left: 0;
+        height: 1px;
+        background-color: $primary;
+        width: 100%;
+    }
+}
+
+h2.subtitle {
+    font-size: 24px;
+    line-height: 28px;
+}
+
+ul {
+    list-style: none !important;
+}
+
+.nine-card {
+    height: 366px;
+    position: relative;
+}
+
+.dismiss {
+    position: absolute;
+    font-size: 24px;
+    line-height: 28px;
+
+    &.top-left {
+        top: 0;
+        left: 0;
+    }
+    &.top-right {
+        top: 0;
+        right: 0;
+    }
+    &.bottom-left {
+        bottom: 0;
+        left: 0;
+    }
+    &.bottom-right {
+        bottom: 0;
+        right: 0;
+    }
+
+}
+
+.corner {
+    border-radius: 100px 0 30px 0;
+}
+
+.nine-card-title {
+    font-size: 128px;
+    line-height: 115px;
+}
+
+.nine-card-content {
+    font-size: 24px;
+    line-height: 33px;
+}
